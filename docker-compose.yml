@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   mongo:
-    image: mongo:8
+    image: mongo:7
     container_name: mongo
     restart: unless-stopped
     volumes:
