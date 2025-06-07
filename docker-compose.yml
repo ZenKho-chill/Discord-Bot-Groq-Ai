@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:8
+    container_name: mongo
+    restart: unless-stopped
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - bot-discord-ai
+
+  bot:
+    build: .
+    container_name: discord-groq-ai
+    restart: unless-stopped
+    env_file: .env
+    depends_on:
+      - mongo
+    networks:
+      - bot-discord-ai
+
+networks:
+  bot-discord-ai:
+
+volumes:
+  mongo_data:
