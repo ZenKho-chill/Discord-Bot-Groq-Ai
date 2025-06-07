@@ -12,7 +12,7 @@
   "bugs": {
     "url": "https://github.com/ZenKho-chill/Discord-Bot-Groq-Ai/issues"
   },
-  "homepage": "https://github.com/ZenKho-chill/Discord-Bot-Groq-Aid#readme",
+  "homepage": "https://github.com/ZenKho-chill/Discord-Bot-Groq-Ai#readme",
   "scripts": {
     "start": "node src/index.js",
     "start-only": "node src/index.js --no-deploy",
